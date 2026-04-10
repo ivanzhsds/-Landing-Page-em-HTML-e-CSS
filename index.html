@@ -6,95 +6,182 @@
 <title>WorkIt Map</title>
 
 <style>
-/* ESTILO GERAL */
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    text-align: center;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* TÍTULO */
-h1 {
-    margin-top: 20px;
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #020617;
+}
+
+header h1 {
     font-size: 40px;
 }
 
-/* IMAGEM */
-img {
-    width: 250px;
+header p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    width: 300px;
     border-radius: 10px;
-    margin: 20px 0;
 }
 
-/* CONTAINER ANIMADO */
-.conteudo {
-    position: absolute;
-    width: 100%;
-    bottom: -100%;
-    animation: subir 25s linear infinite;
+.hero-text {
+    max-width: 400px;
 }
 
-/* ANIMAÇÃO */
-@keyframes subir {
-    0% {
-        bottom: -100%;
-    }
-    100% {
-        bottom: 100%;
-    }
+.hero-text h2 {
+    margin-bottom: 10px;
 }
 
-/* TEXTOS */
-h2, h3 {
-    margin: 15px 0;
-}
-
-p {
-    margin: 10px 0;
+.hero-text p {
+    margin-bottom: 20px;
 }
 
 /* BOTÃO */
 button {
-    margin-top: 15px;
     padding: 10px 20px;
     border: none;
     background-color: #22c55e;
     color: white;
-    cursor: pointer;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
     background-color: #16a34a;
+}
+
+/* BENEFÍCIOS */
+.beneficios {
+    text-align: center;
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* SOBRE */
+.sobre {
+    text-align: center;
+    padding: 40px;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 40px;
+    background-color: #020617;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #020617;
+    color: #94a3b8;
 }
 </style>
 </head>
 
 <body>
 
-<h1>WorkIt Map 🚀</h1>
+<!-- HEADER -->
+<header>
+    <h1>WorkIt Map 🚀</h1>
+    <p>Conectando você ao seu próximo emprego</p>
+</header>
 
-<div class="conteudo">
+<!-- HERO -->
+<section class="hero">
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Trabalho">
 
-    <!-- IMAGEM -->
-    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+    <div class="hero-text">
+        <h2>Encontre vagas perto de você</h2>
+        <p>
+            Descubra oportunidades de emprego de forma rápida, simples e acessível.
+        </p>
+        <button onclick="alert('Em breve disponível!')">Saiba mais</button>
+    </div>
+</section>
 
-    <!-- TEXTO -->
-    <h2>Encontre seu emprego ideal</h2>
-    <p>O WorkIt Map conecta você às melhores oportunidades perto de você.</p>
+<!-- BENEFÍCIOS -->
+<section class="beneficios">
+    <h2>Benefícios</h2>
 
-    <!-- BENEFÍCIOS -->
-    <h3>Benefícios</h3>
-    <p>📍 Vagas próximas</p>
-    <p>⚡ Rápido e fácil</p>
-    <p>💼 Conexão com empresas</p>
+    <div class="cards">
+        <div class="card">
+            <h3>📍 Localização</h3>
+            <p>Vagas próximas de você</p>
+        </div>
 
-    <!-- BOTÃO -->
-    <button onclick="alert('Em breve disponível!')">Saiba mais</button>
+        <div class="card">
+            <h3>⚡ Rapidez</h3>
+            <p>Resultados instantâneos</p>
+        </div>
 
-</div>
+        <div class="card">
+            <h3>💼 Oportunidades</h3>
+            <p>Conexão direta com empresas</p>
+        </div>
+    </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre">
+    <h2>Sobre o projeto</h2>
+    <p>
+        O WorkIt Map foi criado para ajudar pessoas a encontrarem emprego de forma mais fácil e eficiente.
+    </p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Pronto para começar?</h2>
+    <button>Começar agora</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 WorkIt Map</p>
+</footer>
 
 </body>
 </html>
