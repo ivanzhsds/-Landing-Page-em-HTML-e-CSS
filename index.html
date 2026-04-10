@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorkIt Map</title>
+
+<style>
+/* ESTILO GERAL */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* TÍTULO */
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+/* IMAGEM */
+img {
+    width: 250px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* CONTAINER ANIMADO */
+.conteudo {
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    animation: subir 25s linear infinite;
+}
+
+/* ANIMAÇÃO */
+@keyframes subir {
+    0% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+/* TEXTOS */
+h2, h3 {
+    margin: 15px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* BOTÃO */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #22c55e;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #16a34a;
+}
+</style>
+</head>
+
+<body>
+
+<h1>WorkIt Map 🚀</h1>
+
+<div class="conteudo">
+
+    <!-- IMAGEM -->
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216">
+
+    <!-- TEXTO -->
+    <h2>Encontre seu emprego ideal</h2>
+    <p>O WorkIt Map conecta você às melhores oportunidades perto de você.</p>
+
+    <!-- BENEFÍCIOS -->
+    <h3>Benefícios</h3>
+    <p>📍 Vagas próximas</p>
+    <p>⚡ Rápido e fácil</p>
+    <p>💼 Conexão com empresas</p>
+
+    <!-- BOTÃO -->
+    <button onclick="alert('Em breve disponível!')">Saiba mais</button>
+
+</div>
+
+</body>
+</html>
